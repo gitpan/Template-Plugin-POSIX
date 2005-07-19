@@ -1,0 +1,6 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+t/Template-Plugin-POSIX.t
+lib/Template/Plugin/POSIX.pm
