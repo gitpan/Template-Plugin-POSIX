@@ -1,15 +1,12 @@
 #: Template/Plugin/POSIX.pm
 #: Implementation for the POSIX Plugin module
-#: Template-Plugin-POSIX v0.01
+#: Template-Plugin-POSIX v0.02
 #: Copyright (c) 2005 Agent Zhang
-#: 2005-07-17 2005-07-19
+#: 2005-07-17 2005-07-20
 
 package Template::Plugin::POSIX;
 
-#use 5.006001;
 use strict;
-#use warnings;
-
 use POSIX ();
 use Template::Plugin;
 use base qw( Template::Plugin );
@@ -84,16 +81,18 @@ Arguments of all POSIX.* functions are passed by values, and returned in
 scalar context, so some functions for list data, like B<map> and B<grep>, 
 make little sense in this context.
 
-Please keep in mind I just used AUTOLOAD, eval, and Data::Dumper to do the
+Please keep in mind I just used AUTOLOAD and Perl's L<POSIX> module to do the
 magic here.
 
 If you're looking for smart Perl built-in functions, I suggest you take a 
-look at the Template::Plugin::Perl module which exports the excellent 
+look at the L<Template::Plugin::Perl> module which exports the excellent 
 POSIX repertoire.
 
 =head1 SEE ALSO
 
-L<Template::Manual>,
+L<Template>,
+L<POSIX>,
+L<Template::Plugin::Perl>
 
 =head1 AUTHOR
 
