@@ -1,4 +1,4 @@
-abstract: TT2 plugin to import POSIX built-in functions
+abstract: TT2 plugin to import POSIX functions
 author: 'Agent Zhang, <agentzh@gmail.com>'
 build_requires:
   Test::Base: 0.53
@@ -15,4 +15,4 @@ requires:
   POSIX: 1.09
   Template: 2.14
   perl: 5.6.1
-version: 0.03
+version: 0.04

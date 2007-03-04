@@ -1,5 +1,8 @@
 Revision history for Perl extension Template::Plugin::POSIX.
 
+0.04  2007-03-05
+* minor fix in POD
+
 0.03  2007-03-05
 * merged in the changes from Template::Plugin::Perl.
 

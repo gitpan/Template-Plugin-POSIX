@@ -1,8 +1,8 @@
 NAME
-    Template::Plugin::POSIX - TT2 plugin to import POSIX built-in functions
+    Template::Plugin::POSIX - TT2 plugin to import POSIX functions
 
 VERSION
-    This document describes Template::Plugin::POSIX 0.03 released on 5
+    This document describes Template::Plugin::POSIX 0.04 released on 5
     March, 2007.
 
 SYNOPSIS

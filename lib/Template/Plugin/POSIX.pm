@@ -10,7 +10,7 @@ use Template::Plugin;
 use base qw( Template::Plugin );
 use vars qw( $AUTOLOAD $VERSION );
 
-$VERSION = '0.03';
+$VERSION = '0.04';
 
 $Data::Dumper::Indent = 0;
 *throw = \&Template::Plugin::POSIX::throw;
@@ -66,11 +66,11 @@ __END__
 
 =head1 NAME
 
-Template::Plugin::POSIX - TT2 plugin to import POSIX built-in functions
+Template::Plugin::POSIX - TT2 plugin to import POSIX functions
 
 =head1 VERSION
 
-This document describes Template::Plugin::POSIX 0.03 released on 5 March, 2007.
+This document describes Template::Plugin::POSIX 0.04 released on 5 March, 2007.
 
 =head1 SYNOPSIS
 
