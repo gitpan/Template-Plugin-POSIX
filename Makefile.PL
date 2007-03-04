@@ -1,17 +1,15 @@
 use strict;
-#use warnings;
-#use Config;
 use inc::Module::Install;
 
 name            ('Template-Plugin-POSIX');
-version_from    ('lib/Template/Plugin/POSIX.pm');
-abstract       ( 'Perl Template Toolkit Plugin to Import POSIX Functions' );
-author          ('Agent Zhang <agent2002@126.com>');
-license         ('perl');
+all_from        ('lib/Template/Plugin/POSIX.pm');
 
-requires        ('Template');
+requires        ('POSIX'    => '1.09');
+requires        ('Template' => '2.14');
 requires        ('Data::Dumper');
-build_requires  ('Test::More');
-build_requires  ('File::Compare');
 
-&WriteAll;
+build_requires  ('Test::Base' => '0.53');
+
+auto_install;
+WriteAll;
+
