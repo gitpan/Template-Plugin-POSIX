@@ -1,7 +1,5 @@
 abstract: TT2 plugin to import POSIX functions
 author: 'Agent Zhang, <agentzh@gmail.com>'
-build_requires:
-  Test::Base: 0.53
 distribution_type: module
 generated_by: Module::Install version 0.64
 license: perl
@@ -12,7 +10,7 @@ no_index:
     - t
 requires:
   Data::Dumper: 0
-  POSIX: 1.09
-  Template: 2.14
-  perl: 5.6.1
-version: 0.04
+  POSIX: 0
+  Template: 0
+  perl: 5.004
+version: 0.05

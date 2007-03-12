@@ -2,13 +2,15 @@ use strict;
 use inc::Module::Install;
 
 name            ('Template-Plugin-POSIX');
+perl_version    ('5.004');
 all_from        ('lib/Template/Plugin/POSIX.pm');
 
-requires        ('POSIX'    => '1.09');
-requires        ('Template' => '2.14');
+requires        ('POSIX');
+requires        ('Template');
 requires        ('Data::Dumper');
 
-build_requires  ('Test::Base' => '0.53');
+#build_requires  ('Test::Base' => '0.53');
+use_test_base;
 
 auto_install;
 WriteAll;

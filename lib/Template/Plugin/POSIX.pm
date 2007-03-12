@@ -1,6 +1,5 @@
 package Template::Plugin::POSIX;
 
-use 5.006001;
 use strict;
 use warnings;
 
@@ -10,7 +9,7 @@ use Template::Plugin;
 use base qw( Template::Plugin );
 use vars qw( $AUTOLOAD $VERSION );
 
-$VERSION = '0.04';
+our $VERSION = '0.05';
 
 $Data::Dumper::Indent = 0;
 *throw = \&Template::Plugin::POSIX::throw;
@@ -70,7 +69,7 @@ Template::Plugin::POSIX - TT2 plugin to import POSIX functions
 
 =head1 VERSION
 
-This document describes Template::Plugin::POSIX 0.04 released on 5 March, 2007.
+This document describes Template::Plugin::POSIX 0.05 released on 12 March, 2007.
 
 =head1 SYNOPSIS
 
@@ -94,7 +93,7 @@ this little plugin in order to open a window for the template file to the full
 richness of most POSIX functions, making the Template language a
 "programming language" in a much more serious sense.
 
-Please keep in mind I just used AUTOLOAD, eval, and Data::Dumper to do the
+Please keep in mind I just used AUTOLOAD, eval, and L<Data::Dumper> to do the
 magic here.
 
 If you're looking for even more functions, I suggest you take a look at the
@@ -104,11 +103,11 @@ L<Template::Plugin::Perl> module which exports the excellent POSIX repertoire.
 
 =over
 
-=item new
+=item C<new>
 
 Constructor called by the TT2 template system
 
-=item throw
+=item C<throw>
 
 TT2 exception handling procedure.
 

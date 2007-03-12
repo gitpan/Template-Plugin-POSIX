@@ -2,7 +2,7 @@ NAME
     Template::Plugin::POSIX - TT2 plugin to import POSIX functions
 
 VERSION
-    This document describes Template::Plugin::POSIX 0.04 released on 5
+    This document describes Template::Plugin::POSIX 0.05 released on 12
     March, 2007.
 
 SYNOPSIS
@@ -34,9 +34,10 @@ DESCRIPTION
     repertoire.
 
 METHODS
-    new Constructor called by the TT2 template system
+    "new"
+        Constructor called by the TT2 template system
 
-    throw
+    "throw"
         TT2 exception handling procedure.
 
 TODO
